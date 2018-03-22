@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navi-Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Map fragment</string>
+    <string name="places_key">AIzaSyCjR7QKi6I4jvs_x4eJDel-AKUmR_B2a3A</string>
+    <string name="send_to">Share via...</string>
+</resources>

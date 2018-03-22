@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242424"
+    android:orientation="vertical"
+    tools:context="layout.FavListFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_light_default">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textViewLocationName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.47"
+                    android:background="@color/common_google_signin_btn_text_dark_focused"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="400dp"
+                    android:layout_height="267dp" />
+
+                <Button
+                    android:id="@+id/buttonUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="UploadPhotoButtonClick"
+                    android:text="Upload Photo"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:layout_weight="0.47"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textViewNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.47"
+                    android:background="@color/common_google_signin_btn_text_dark_focused"
+                    android:text="Notes"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50">
+
+                    <EditText
+                        android:id="@+id/editTextNotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="23dp"
+                        android:layout_weight="0.47"
+                        android:background="@color/cardview_light_background"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:minHeight="200dp"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/buttonShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="UploadPhotoButtonClick"
+                    android:text="Share Postcard"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

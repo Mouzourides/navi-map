@@ -1,0 +1,225 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ExploreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333333">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#242424"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#242424">
+
+                <TextView
+                    android:id="@+id/textViewCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/common_google_signin_btn_text_dark_focused"
+                    android:fontFamily="Calibri (Body)"
+                    android:text="Category"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/textViewCategory"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/row1" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxArt"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="38dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginStart="49dp"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxEat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkBoxArt"
+                    android:layout_alignBottom="@+id/checkBoxArt"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxParks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkBoxEat"
+                    android:layout_alignBottom="@+id/checkBoxEat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginRight="48dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/checkBoxArt"
+                    app:srcCompat="@drawable/row2" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxLandmarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_alignLeft="@+id/checkBoxArt"
+                    android:layout_alignStart="@+id/checkBoxArt"
+                    android:layout_marginBottom="38dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxBars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkBoxLandmarks"
+                    android:layout_alignBottom="@+id/checkBoxLandmarks"
+                    android:layout_alignLeft="@+id/checkBoxEat"
+                    android:layout_alignStart="@+id/checkBoxEat" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxShops"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/checkBoxBars"
+                    android:layout_alignBottom="@+id/checkBoxBars"
+                    android:layout_alignLeft="@+id/checkBoxParks"
+                    android:layout_alignStart="@+id/checkBoxParks" />
+
+                <TextView
+                    android:id="@+id/textViewDistanceTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/checkBoxBars"
+                    android:layout_marginTop="17dp"
+                    android:background="@color/common_google_signin_btn_text_dark_focused"
+                    android:fontFamily="Calibri (Body)"
+                    android:text="Distance"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.94">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/block" />
+
+                <SeekBar
+                    android:id="@+id/seekBarRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="0.17" />
+
+                <TextView
+                    android:id="@+id/textViewDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/seekBarRadius"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Distance:"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:text="Rating"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/block" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:focusableInTouchMode="false" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="onSearchButtonClick"
+                android:text="Search"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

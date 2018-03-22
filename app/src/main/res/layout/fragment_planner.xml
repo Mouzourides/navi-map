@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.PlannerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#242424"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ListView
+            android:id="@+id/PlannerList"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="#ececec"
+            android:elevation="1dp"
+            android:headerDividersEnabled="false"
+            android:maxWidth="400dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount of Locations"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/buttonPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:capitalize="sentences"
+                android:elevation="0dp"
+                android:onClick="onGenerateClick"
+                android:text="Generate Plan"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textColorHighlight="#002259"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
